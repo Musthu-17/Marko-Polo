@@ -1,0 +1,98 @@
+.App {
+ overflow-x: hidden;
+}
+
+.App-header {
+  background-color: #9ed4eb;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.markdown-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.box1, .box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 40px 0;
+  transition: all 0.3s ease;
+}
+
+.box1 {
+  width: 50%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.box2 {
+  width: 70%;
+  height: 70%;
+}
+
+.box1.expanded, .box2.expanded {
+  width: 80%;
+  height: 100%;
+  margin: 10px 0;
+}
+
+.markdown-preview.editor .box1 {
+  width: 100%;
+  height: 100%;
+}
+
+.markdown-preview.editor .box2 {
+  display: none;
+}
+
+.markdown-preview.preview .box1 {
+  display: none;
+}
+
+.markdown-preview.preview .box2 {
+  width: 100%;
+  height: 100%;
+}
+
+.editor-head, .preview-head {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(10, 180, 237);
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+.editor-head p, .preview-head p {
+  margin: 0;
+}
+
+#editor {
+  width: 100%;
+  height: 200px;
+}
+
+#preview {
+  width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+#preview h1 {
+  margin: 5px 0;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
